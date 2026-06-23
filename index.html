@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hey You 🥺</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="hearts-container"></div>
+
+    <main class="container">
+
+        <!-- HERO -->
+        <section class="glass hero">
+            <h1>Hey You 🥺</h1>
+            <p>Okay... thodi si galti ho gayi 😅</p>
+        </section>
+
+        <!-- QUESTIONS -->
+        <section class="questions">
+
+            <div class="glass question-card">
+                <h2>💕 Abhi bhi mujhe thoda sa pasand karti ho?</h2>
+
+                <div class="btn-group">
+                    <button class="answer-btn">Haan 😊</button>
+                    <button class="answer-btn">Obviously 🙄</button>
+                </div>
+            </div>
+
+            <div class="glass question-card">
+                <h2>🌸 Mere liye abhi bhi chance hai?</h2>
+
+                <div class="btn-group">
+                    <button class="answer-btn">Maybe 😏</button>
+                    <button class="answer-btn">Haan hai 💕</button>
+                </div>
+            </div>
+
+            <div class="glass question-card">
+                <h2>💖 Thoda sa toh pyaar karti ho na?</h2>
+
+                <div class="btn-group">
+                    <button class="answer-btn">Of course ❤️</button>
+                    <button class="answer-btn">Shayad thoda 🤭</button>
+                </div>
+            </div>
+
+            <div id="response-card" class="glass response-card hidden"></div>
+
+        </section>
+
+        <!-- APPRECIATION -->
+        <section class="glass appreciation">
+            <h2>Things I Appreciate About You 🌷</h2>
+
+            <div class="pill-container">
+                <div class="pill">✨ Your smile</div>
+                <div class="pill">🌸 Your kindness</div>
+                <div class="pill">💖 Your sense of humor</div>
+                <div class="pill">🌷 The way you care</div>
+                <div class="pill">☀️ Your positive energy</div>
+            </div>
+        </section>
+
+        <!-- RUNAWAY BUTTON -->
+        <section class="glass playful-section">
+            <h2>Testing the mood meter 😅</h2>
+
+            <div class="runaway-area">
+                <button id="runawayBtn">Abhi bhi gussa ho? 😤</button>
+            </div>
+
+            <p id="runawayMessage"></p>
+        </section>
+
+        <!-- SURPRISE -->
+        <section class="glass surprise-section">
+
+            <button id="surpriseBtn" class="surprise-btn">
+                🎁 Ek Surprise Dekho
+            </button>
+
+            <div id="surpriseContent" class="hidden">
+
+                <div class="reveal-card glass">
+                    <h2>Okay, enough questions... ab meri baari 😌</h2>
+
+                    <p class="question-date">
+                        🌸 Would you like to go on a redemption date with me?
+                    </p>
+
+                    <div class="btn-group">
+                        <button id="planBtn">Tell me the plan 👀</button>
+                        <button id="negotiateBtn">Nahi, pehle aur manao 😏</button>
+                    </div>
+                </div>
+
+                <div id="planCard" class="glass hidden date-plan">
+                    <h3>Date Plan 💕</h3>
+
+                    <p>📍 Place: [DATE_LOCATION]</p>
+                    <p>🍕 Food: [FOOD_PLACE]</p>
+                    <p>🎬 Activity: [ACTIVITY]</p>
+                    <p>🍨 Bonus Treat: [TREAT]</p>
+
+                    <p class="cute-text">
+                        I can't undo being stupid 😅<br>
+                        But maaf kro yr ab...pgl ho gya hu ab 💖
+                    </p>
+                </div>
+
+                <div id="negotiationCard" class="glass hidden">
+                    Negotiations have begun 🤝😂
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- DREAM DATE -->
+        <section class="glass dream-date">
+
+            <h2>Your Dream Date 💭</h2>
+
+            <form id="dreamForm">
+                <textarea
+                    id="dreamInput"
+                    placeholder="Type your dream date idea here..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Save Idea 💕
+                </button>
+            </form>
+
+            <div id="savedDream"></div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+:root{
+    --pink:#ffd9ec;
+    --lavender:#e8dcff;
+    --cream:#fff8ec;
+    --white:#ffffff;
+    --text:#4d4d4d;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+    background:
+    linear-gradient(
+        135deg,
+        var(--pink),
+        var(--lavender),
+        var(--cream)
+    );
+    overflow-x:hidden;
+    color:var(--text);
+}
+
+.container{
+    width:min(92%,900px);
+    margin:auto;
+    padding:25px 0 60px;
+}
+
+.glass{
+    background:rgba(255,255,255,.28);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.4);
+    border-radius:24px;
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+}
+
+section{
+    margin-bottom:25px;
+}
+
+.hero{
+    text-align:center;
+    padding:40px 25px;
+}
+
+.hero h1{
+    font-size:clamp(2rem,5vw,3.5rem);
+}
+
+.hero p{
+    margin-top:12px;
+}
+
+.question-card{
+    padding:24px;
+    margin-bottom:18px;
+}
+
+.question-card h2{
+    font-size:1.1rem;
+    margin-bottom:15px;
+}
+
+.btn-group{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+button{
+    border:none;
+    cursor:pointer;
+    padding:12px 18px;
+    border-radius:14px;
+    font-size:.95rem;
+    transition:.3s;
+    font-family:inherit;
+}
+
+.answer-btn,
+.surprise-btn,
+#planBtn,
+#negotiateBtn,
+form button{
+    background:white;
+}
+
+button:hover{
+    transform:translateY(-3px);
+}
+
+.response-card{
+    margin-top:20px;
+    padding:18px;
+    text-align:center;
+    font-weight:600;
+}
+
+.hidden{
+    display:none;
+}
+
+.appreciation{
+    padding:25px;
+}
+
+.appreciation h2{
+    margin-bottom:18px;
+}
+
+.pill-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.pill{
+    background:white;
+    padding:10px 16px;
+    border-radius:999px;
+}
+
+.playful-section{
+    padding:25px;
+    text-align:center;
+}
+
+.runaway-area{
+    position:relative;
+    height:220px;
+    margin-top:20px;
+}
+
+#runawayBtn{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    background:#ff8eb7;
+    color:white;
+}
+
+#runawayMessage{
+    margin-top:20px;
+    font-weight:600;
+}
+
+.surprise-section{
+    padding:25px;
+    text-align:center;
+}
+
+.surprise-btn{
+    font-size:1.1rem;
+}
+
+.reveal-card{
+    margin-top:25px;
+    padding:25px;
+}
+
+.date-plan,
+#negotiationCard{
+    margin-top:20px;
+    padding:20px;
+}
+
+.question-date{
+    margin:15px 0;
+}
+
+.cute-text{
+    margin-top:18px;
+    font-weight:500;
+}
+
+.dream-date{
+    padding:25px;
+}
+
+.dream-date h2{
+    margin-bottom:15px;
+}
+
+textarea{
+    width:100%;
+    min-height:120px;
+    border:none;
+    outline:none;
+    resize:vertical;
+    border-radius:16px;
+    padding:15px;
+    font-family:inherit;
+}
+
+form button{
+    margin-top:12px;
+}
+
+#savedDream{
+    margin-top:18px;
+    font-weight:600;
+}
+
+.heart{
+    position:fixed;
+    pointer-events:none;
+    font-size:20px;
+    animation:floatUp 4s linear forwards;
+}
+
+@keyframes floatUp{
+    0%{
+        opacity:1;
+        transform:translateY(0) scale(.8);
+    }
+    100%{
+        opacity:0;
+        transform:translateY(-220px) scale(1.4);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.reveal-card,
+.response-card,
+.date-plan,
+#negotiationCard{
+    animation:fadeIn .4s ease;
+}
+
+@media (min-width:768px){
+
+    .question-card h2{
+        font-size:1.25rem;
+    }
+
+    button{
+        font-size:1rem;
+    }
+}
